@@ -1,0 +1,270 @@
+body{
+	background-color : #FFF;
+}
+
+
+.megaContainer{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: top;
+}
+
+.Container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.Header{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.SwTitle{
+	height: 100%;
+	flex-grow: 1;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	color: #302A28;
+	padding-left: 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+
+	cursor: default;
+}
+
+.Headbar{
+	height: 100%;
+	width: 300px;
+
+}
+
+
+.Menu{
+	background-color: #232A63;
+	width: 60px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	align-items: center;
+}
+
+.Application{
+	background-color: yellow;
+	height: calc(100vh - 71px);
+	flex-grow: 1;
+}
+
+
+.sw{
+	height: 60px;
+	width: 100%;
+	background-color: #1467CC;
+	color: #0D2233;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 1px;
+	-moz-user-select: none;
+}
+
+.sw:hover{
+	color: white;
+	background-color: #2E81E6;
+}
+.sw:active{
+	color: lightgray;
+	background-color: #213D80;
+}
+
+
+.Input{
+	width: [100%-20px];
+	height: 100vh;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #F7F7F7;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+.InputWrapper {
+	margin: 10px;
+	width: calc(100% - 32px);
+	flex-grow: 1;
+	padding:6px;
+	border-radius: 8px;
+	border: 1px solid lightgray;
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	background-color: white;
+	overflow: hidden;
+}
+
+
+
+.InputArea{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	white-space: pre;
+	word-wrap: normal;
+	border: none;
+	font-size: 10px;
+	font-family: verdana,arial,sans-serif;
+	background: transparent;
+	z-index: 100;
+	-moz-tab-size: 20;
+}
+.InputArea::first-line {
+	font-weight: bold;
+}
+textarea::first-line {
+	font-weight: bold;
+}
+
+.inline{
+	display: block;
+}
+.headingSetter{
+	margin-left: -6px;
+	margin-top: -6px;
+	margin-right: 4px;
+	padding-left: 5px;
+	width:30px;
+	height: calc(100% + 8px);
+	background-color: #F2F2F2;
+	padding-top: 9px;
+}
+
+.headingScale {
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	float:left;
+	margin-bottom: 3px;
+	border-radius: 20px;
+	background-color: lightgray;
+	cursor: pointer;
+}
+.headingScale:hover {
+	background-color: red;
+}
+
+.headingScaleTitle{
+	transform-origin: 50% 100%;
+	transform: rotate(-90deg);
+	text-align: right;
+	margin-top: 34px;
+	margin-left: 4px;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	color: gray;
+	pointer-events: none;
+}
+
+
+.Genera{
+	width: 100%;
+	height: 60px;
+	background-color: #3CB4F0;
+	font-family: verdana,arial,sans-serif;
+	font-size: 16px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.Add{
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+}
+
+.headingCover{
+	position: absolute;
+	margin-top:10px;
+	margin-left: -4px;
+	width: calc(100% - 39px);
+	height: 13px;
+	background-color: #FFFCA3;
+	pointer-events: none;
+	opacity:0.4;
+	padding-top:20px;
+	border-bottom: 1px solid lightgray;
+}
+
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: lightgray;
+	background-color: white;
+	min-width: 18px;
+	max-width: 100px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 2px;
+}
+table.gridtable td:nth-child(1){
+	background-color: #fffccc;
+	min-width: 40px;
+	text-align: center;
+}
+table.gridtable td:nth-child(2){
+	background-color: #F7FDFF;
+	max-width: 600px;
+	border-right: 2px solid gray;
+}
+table.gridtable td:empty {
+	background-color: #FAFAFA;
+}
+
+
+
